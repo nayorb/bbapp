@@ -1,19 +1,19 @@
-import React from 'react'
-import { Platform } from 'react-native'
+import React from "react"
+import { Platform } from "react-native"
 import {
   createStackNavigator,
   createBottomTabNavigator,
-} from 'react-navigation'
+} from "react-navigation"
 
-import TabBarIcon from '../components/TabBarIcon'
-import HomeScreen from '../screens/HomeScreen'
-import SettingsScreen from '../screens/SettingsScreen'
+import TabBarIcon from "../components/TabBarIcon"
+import HomeScreen from "../screens/HomeScreen"
+import SettingsScreen from "../screens/SettingsScreen"
 
-import ExercisesScreen from '../screens/exercises/index/ExercisesScreen'
-import ExerciseScreen from '../screens/exercises/exercise/ExerciseScreen'
+import ExercisesScreen from "../screens/exercises/index/ExercisesScreen"
+import CategoryDetailScreen from "../screens/exercises/exercise/CategoryDetailScreen"
 
 const config = Platform.select({
-  web: { headerMode: 'screen' },
+  web: { headerMode: "screen" },
   default: {},
 })
 
@@ -25,36 +25,36 @@ const HomeStack = createStackNavigator(
 )
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+  tabBarLabel: "Home",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-home' : 'md-home'}
+      name={Platform.OS === "ios" ? "ios-home" : "md-home"}
     />
   ),
 }
 
-HomeStack.path = ''
+HomeStack.path = ""
 
 const ExercisesStack = createStackNavigator(
   {
     Exercises: { screen: ExercisesScreen },
-    Exercise: { screen: ExerciseScreen },
+    CategoryDetail: { screen: CategoryDetailScreen },
   },
   config
 )
 
 ExercisesStack.navigationOptions = {
-  tabBarLabel: 'Exercises',
+  tabBarLabel: "Exercises",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-shuffle' : 'md-shuffle'}
+      name={Platform.OS === "ios" ? "ios-shuffle" : "md-shuffle"}
     />
   ),
 }
 
-ExercisesStack.path = ''
+ExercisesStack.path = ""
 
 const SettingsStack = createStackNavigator(
   {
@@ -64,23 +64,23 @@ const SettingsStack = createStackNavigator(
 )
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+  tabBarLabel: "Settings",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-settings' : 'md-settings'}
+      name={Platform.OS === "ios" ? "ios-settings" : "md-settings"}
     />
   ),
 }
 
-SettingsStack.path = ''
+SettingsStack.path = ""
 
 const tabNavigator = createBottomTabNavigator({
-  HomeStack,
   ExercisesStack,
+  HomeStack,
   SettingsStack,
 })
 
-tabNavigator.path = ''
+tabNavigator.path = ""
 
 export default tabNavigator

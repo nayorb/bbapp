@@ -1,18 +1,18 @@
 import React from "react"
 import { ScrollView, StyleSheet, Text } from "react-native"
-import CATEGORIES from "../../../constants/Exercises"
 
 import ListItem from "../../../components/ListItem"
 
 export default function LinksScreen(props) {
   const { navigate } = props.navigation
+  const category = props.navigation.getParam("category")
   return (
     <ScrollView style={styles.container}>
-      {CATEGORIES.map(category => (
+      {category.exercises.map(exercise => (
         <ListItem
-          title={category.title}
-          onPress={() => navigate("CategoryDetail", { category })}
-          key={category.title}
+          title={exercise.title}
+          // onPress={() => navigate("Exercise", { exercise: exercise.title })}
+          key={exercise.title}
         />
       ))}
     </ScrollView>
@@ -20,7 +20,7 @@ export default function LinksScreen(props) {
 }
 
 LinksScreen.navigationOptions = {
-  title: "Links",
+  title: "",
 }
 
 const styles = StyleSheet.create({
