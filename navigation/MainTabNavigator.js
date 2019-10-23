@@ -7,8 +7,10 @@ import {
 
 import TabBarIcon from '../components/TabBarIcon'
 import HomeScreen from '../screens/HomeScreen'
-import LinksScreen from '../screens/LinksScreen'
 import SettingsScreen from '../screens/SettingsScreen'
+
+import ExercisesScreen from '../screens/exercises/index/ExercisesScreen'
+import ExerciseScreen from '../screens/exercises/exercise/ExerciseScreen'
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -27,35 +29,32 @@ HomeStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
+      name={Platform.OS === 'ios' ? 'ios-home' : 'md-home'}
     />
   ),
 }
 
 HomeStack.path = ''
 
-const LinksStack = createStackNavigator(
+const ExercisesStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Exercises: { screen: ExercisesScreen },
+    Exercise: { screen: ExerciseScreen },
   },
   config
 )
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+ExercisesStack.navigationOptions = {
+  tabBarLabel: 'Exercises',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-shuffle' : 'md-shuffle'}
     />
   ),
 }
 
-LinksStack.path = ''
+ExercisesStack.path = ''
 
 const SettingsStack = createStackNavigator(
   {
@@ -69,7 +68,7 @@ SettingsStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
+      name={Platform.OS === 'ios' ? 'ios-settings' : 'md-settings'}
     />
   ),
 }
@@ -78,7 +77,7 @@ SettingsStack.path = ''
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  ExercisesStack,
   SettingsStack,
 })
 
