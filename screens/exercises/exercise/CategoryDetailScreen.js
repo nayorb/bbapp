@@ -1,32 +1,38 @@
-import React from "react"
-import { ScrollView, StyleSheet, Text } from "react-native"
+import React from 'react'
+import { ScrollView, StyleSheet, FlatList } from 'react-native'
 
-import ListItem from "../../../components/ListItem"
+import ListItem from '../../../components/ListItem'
 
-export default function LinksScreen(props) {
+export default function CategoryDetailScreen(props) {
   const { navigate } = props.navigation
-  const category = props.navigation.getParam("category")
+  const category = props.navigation.getParam('category')
+  CategoryDetailScreen.navigationOptions = { title: category.title }
   return (
     <ScrollView style={styles.container}>
-      {category.exercises.map(exercise => (
-        <ListItem
-          title={exercise.title}
-          // onPress={() => navigate("Exercise", { exercise: exercise.title })}
-          key={exercise.title}
+      {
+        <FlatList
+          data={category.exercises}
+          keyExtractor={item => item.title}
+          renderItem={({ item }) => (
+            <ListItem
+              title={item.title}
+              onPress={() => navigate('CategoryDetail', { item })}
+            />
+          )}
         />
-      ))}
+      }
     </ScrollView>
   )
 }
 
-LinksScreen.navigationOptions = {
-  title: "",
-}
+// CategoryDetailScreen.navigationOptions = {
+//   title: "",
+// }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingBottom: 15,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
 })
