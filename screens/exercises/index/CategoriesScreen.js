@@ -1,10 +1,10 @@
-import React from 'react'
-import { ScrollView, StyleSheet, Image } from 'react-native'
-import CATEGORIES from '../../../constants/Exercises'
+import React from "react"
+import { ScrollView, StyleSheet, Image } from "react-native"
+import CATEGORIES from "../../../constants/Exercises"
 
-import ListItem from '../../../components/ListItem'
-import { FlatList } from 'react-native-gesture-handler'
-import Colors from '../../../constants/Colors'
+import ListItem from "../../../components/ListItem"
+import { FlatList } from "react-native-gesture-handler"
+import Colors from "../../../constants/Colors"
 
 export default function CategoriesScreen(props) {
   const { navigate } = props.navigation
@@ -17,7 +17,7 @@ export default function CategoriesScreen(props) {
           renderItem={({ item }) => (
             <ListItem
               title={item.title}
-              onPress={() => navigate('CategoryDetail', { category: item })}
+              onPress={() => navigate("CategoryDetail", { category: item })}
               icon={<Image source={item.img} style={styles.listItemImage} />}
             />
           )}
@@ -28,17 +28,17 @@ export default function CategoriesScreen(props) {
 }
 
 CategoriesScreen.navigationOptions = {
-  title: 'Categories',
+  title: "Categories",
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingBottom: 15,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   listItemImage: {
-    width: 50,
-    height: 50,
+    width: 75,
+    height: 75,
   },
 })
