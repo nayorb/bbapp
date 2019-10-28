@@ -3,11 +3,12 @@ import images from '../assets/images/muscles/muscles'
 import Layout from '../constants/Layout'
 
 import { View, Text, Image } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const Muscles = props => {
   const muscles = props.muscles
   return (
-    <View
+    <TouchableOpacity
       style={{
         borderBottomWidth: 1,
         borderBottomColor: 'grey',
@@ -39,7 +40,7 @@ const Muscles = props => {
           }}
         />
       ))}
-    </View>
+    </TouchableOpacity>
   )
 }
 
