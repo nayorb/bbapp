@@ -1,8 +1,8 @@
 import React from 'react'
 import { Platform } from 'react-native'
 import {
-  createStackNavigator,
-  createBottomTabNavigator,
+	createStackNavigator,
+	createBottomTabNavigator,
 } from 'react-navigation'
 
 import TabBarIcon from '../components/TabBarIcon'
@@ -14,73 +14,80 @@ import CategoryDetailScreen from '../screens/exercises/exercise/CategoryDetailSc
 import ExerciseScreen from '../screens/exercises/exercise/ExerciseScreen'
 
 const config = Platform.select({
-  web: { headerMode: 'float' },
-  default: { headerMode: 'none' },
+	web: { headerMode: 'float' },
+	default: {
+		headerMode: 'float',
+		navigationOptions: {
+			headerStyle: {
+				backgroundColor: 'red',
+			},
+		},
+	},
 })
 
 const HomeStack = createStackNavigator(
-  {
-    Home: HomeScreen,
-  },
-  config
+	{
+		Home: HomeScreen,
+	},
+	config
 )
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-home' : 'md-home'}
-    />
-  ),
+	tabBarLabel: 'Home',
+	tabBarIcon: ({ focused }) => (
+		<TabBarIcon
+			focused={focused}
+			name={Platform.OS === 'ios' ? 'ios-home' : 'md-home'}
+		/>
+	),
 }
 
 HomeStack.path = ''
 
 const ExercisesStack = createStackNavigator(
-  {
-    Categories: { screen: CategoriesScreen },
-    CategoryDetail: { screen: CategoryDetailScreen },
-    ExerciseScreen: { screen: ExerciseScreen },
-  },
-  config
+	{
+		Categories: { screen: CategoriesScreen },
+		CategoryDetail: { screen: CategoryDetailScreen },
+		ExerciseScreen: { screen: ExerciseScreen },
+	},
+	config
 )
 
 ExercisesStack.navigationOptions = {
-  tabBarLabel: 'Exercises',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-shuffle' : 'md-shuffle'}
-    />
-  ),
+	tabBarLabel: 'Exercises',
+	tabBarIcon: ({ focused }) => (
+		<TabBarIcon
+			focused={focused}
+			name={Platform.OS === 'ios' ? 'ios-shuffle' : 'md-shuffle'}
+		/>
+	),
 }
 
 ExercisesStack.path = ''
 
 const SettingsStack = createStackNavigator(
-  {
-    Settings: SettingsScreen,
-  },
-  config
+	{
+		Settings: SettingsScreen,
+	},
+	config
 )
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-settings' : 'md-settings'}
-    />
-  ),
+	tabBarLabel: 'Settings',
+	tabBarIcon: ({ focused }) => (
+		<TabBarIcon
+			focused={focused}
+			name={Platform.OS === 'ios' ? 'ios-settings' : 'md-settings'}
+		/>
+	),
 }
 
 SettingsStack.path = ''
 
 const tabNavigator = createBottomTabNavigator({
-  ExercisesStack,
-  HomeStack,
-  SettingsStack,
+	ExercisesStack,
+	HomeStack,
+	SettingsStack,
 })
 
 tabNavigator.path = ''
