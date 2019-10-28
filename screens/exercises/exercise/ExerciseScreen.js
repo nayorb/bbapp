@@ -1,19 +1,20 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text } from 'react-native'
-import EXERCISES from '../../../constants/Exercises'
+
+import Header from '../../../components/Header'
+import Mastery from '../../../components/Mastery'
+import Muscles from '../../../components/Muscles'
 
 export default function ExerciseScreen(props) {
-  ExerciseScreen.navigationOptions.title = props.navigation.getParam('exercise')
+  const exercise = props.navigation.getParam('exercise')
   return (
     <ScrollView style={styles.container}>
-      <Text>{props.navigation.getParam('exercise')}</Text>
+      <Header title={exercise.title} />
+      <Mastery mastery={exercise.mastery} />
+      <Muscles muscles={exercise.muscles} />
     </ScrollView>
   )
 }
-
-// ExerciseScreen.navigationOptions = {
-//   title: '',
-// }
 
 const styles = StyleSheet.create({
   container: {

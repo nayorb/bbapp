@@ -11,10 +11,11 @@ import SettingsScreen from '../screens/SettingsScreen'
 
 import CategoriesScreen from '../screens/exercises/index/CategoriesScreen'
 import CategoryDetailScreen from '../screens/exercises/exercise/CategoryDetailScreen'
+import ExerciseScreen from '../screens/exercises/exercise/ExerciseScreen'
 
 const config = Platform.select({
-  web: { headerMode: 'screen' },
-  default: {},
+  web: { headerMode: 'float' },
+  default: { headerMode: 'none' },
 })
 
 const HomeStack = createStackNavigator(
@@ -40,6 +41,7 @@ const ExercisesStack = createStackNavigator(
   {
     Categories: { screen: CategoriesScreen },
     CategoryDetail: { screen: CategoryDetailScreen },
+    ExerciseScreen: { screen: ExerciseScreen },
   },
   config
 )

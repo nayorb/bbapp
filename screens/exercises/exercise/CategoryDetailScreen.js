@@ -1,12 +1,11 @@
-import React from "react"
-import { ScrollView, StyleSheet, FlatList, Image } from "react-native"
+import React from 'react'
+import { ScrollView, StyleSheet, FlatList, Image } from 'react-native'
 
-import ListItem from "../../../components/ListItem"
+import ListItem from '../../../components/ListItem'
 
 export default function CategoryDetailScreen(props) {
   const { navigate } = props.navigation
-  const category = props.navigation.getParam("category")
-  CategoryDetailScreen.navigationOptions = { title: category.title }
+  const category = props.navigation.getParam('category')
   return (
     <ScrollView style={styles.container}>
       {
@@ -16,7 +15,7 @@ export default function CategoryDetailScreen(props) {
           renderItem={({ item }) => (
             <ListItem
               title={item.title}
-              onPress={() => navigate("CategoryDetail", { item })}
+              onPress={() => navigate('ExerciseScreen', { exercise: item })}
               icon={
                 item.img ? (
                   <Image source={item.img} style={styles.listItemImage} />
@@ -30,15 +29,11 @@ export default function CategoryDetailScreen(props) {
   )
 }
 
-// CategoryDetailScreen.navigationOptions = {
-//   title: "",
-// }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingBottom: 15,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
   },
   listItemImage: {
     width: 75,
