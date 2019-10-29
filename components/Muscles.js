@@ -1,48 +1,41 @@
-import React from 'react'
-import images from '../assets/images/muscles/muscles'
+import React, { useState } from 'react'
 import Layout from '../constants/Layout'
+import Colors from '../constants/Colors'
 
 import { View, Text, ImageBackground, Image } from 'react-native'
-import { TouchableOpacity } from 'react-native-gesture-handler'
+import ImageStack from '../screens/exercises/exercise/ImageStack'
+import MuscleDetail from '../screens/exercises/exercise/MuscleDetail'
 
 const { width, height } = Layout.window
 
 const Muscles = props => {
-	const muscles = props.muscles
-	return (
-		<View
-			style={{
-				position: 'relative',
-				width: Layout.window.width,
-				height: Layout.window.width * 0.713,
-				backgroundColor: 'fafafa',
-			}}
-		>
-			<Image
-				source={images.main}
-				resizeMode='contain'
-				style={{
-					position: 'absolute',
-					width: '100%',
-					height: '100%',
-				}}
-			/>
-			{Object.keys(muscles).map((muscleTypeKey, index) => (
-				<Image
-					key={muscleTypeKey}
-					source={images[muscleTypeKey]}
-					resizeMode='contain'
-					zIndex={index}
-					style={{
-						opacity: muscles[muscleTypeKey] * 0.2,
-						position: 'absolute',
-						width: '100%',
-						height: '100%',
-					}}
-				/>
-			))}
-		</View>
-	)
+  const [selectedMuscleGroup, setSelectedMuscleGroup] = useState(null)
+
+  return (
+    <View
+      style={{
+        width: '90%',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: Colors.grey,
+        borderRadius: 16,
+        marginTop: 10,
+      }}
+    >
+      <ImageStack
+        muscles={props.muscles}
+        width="90"
+        selectedMuscleGroup={selectedMuscleGroup}
+      />
+      <MuscleDetail
+        muscles={props.muscles}
+        selectedMuscleGroup={selectedMuscleGroup}
+        handleMuscleGroupSelect={group =>
+          setSelectedMuscleGroup(group === selectedMuscleGroup ? null : group)
+        }
+      />
+    </View>
+  )
 }
 
 export default Muscles

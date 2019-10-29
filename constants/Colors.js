@@ -12,4 +12,5 @@ export default {
   noticeBackground: tintColor,
   noticeText: '#fff',
   grey: '#f2f2f2',
+  muscle: '#b83131',
 }

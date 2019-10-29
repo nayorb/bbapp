@@ -2,21 +2,27 @@ import React, { Component } from 'react'
 import Layout from '../constants/Layout'
 
 import { StyleSheet, View, Text } from 'react-native'
+import Colors from '../constants/Colors'
 
 const Header = props => {
   return (
     <View
       style={{
         alignItems: 'center',
-        justifyContent: 'center',
+        flexDirection: 'row',
         height: Layout.header.height,
-        borderBottomWidth: 1,
-        borderBottomColor: 'red',
-        borderTopWidth: 1,
-        borderTopColor: 'red',
       }}
     >
-      <Text>{props.title}</Text>
+      {props.left}
+      <Text
+        style={{
+          flex: 1,
+          textAlign: 'center',
+        }}
+      >
+        {props.title}
+      </Text>
+      {props.right}
     </View>
   )
 }

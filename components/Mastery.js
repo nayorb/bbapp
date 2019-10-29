@@ -1,30 +1,42 @@
-import React from "react"
-import Colors from "../constants/Colors"
+import React from 'react'
+import Colors from '../constants/Colors'
 
-import { View, Text } from "react-native"
+import { View, Text } from 'react-native'
 
 const Mastery = props => {
   const mastery = props.mastery
   return (
     <View
       style={{
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-around",
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around',
         height: 60,
-        borderBottomWidth: 1,
-        borderBottomColor: "grey",
-        borderTopWidth: 1,
-        borderTopColor: "grey",
-        marginVertical: 10,
+        width: '90%',
+        borderColor: Colors.grey,
+        borderWidth: 1,
+        borderRadius: 16,
       }}
     >
       {Object.keys(mastery).map(masteryItemKey => (
-        <React.Fragment key={masteryItemKey}>
-          <Text>{mastery[masteryItemKey][0]}</Text>
-          <Text>x</Text>
-          <Text>{mastery[masteryItemKey][1]}</Text>
-        </React.Fragment>
+        <View
+          key={masteryItemKey}
+          style={{
+            alignItems: 'center',
+            flex: 1,
+          }}
+        >
+          <Text
+            style={{
+              marginBottom: 5,
+            }}
+          >
+            {masteryItemKey.charAt(0).toUpperCase() + masteryItemKey.slice(1)}
+          </Text>
+          <Text>
+            {mastery[masteryItemKey][0]} x {mastery[masteryItemKey][1]}
+          </Text>
+        </View>
       ))}
     </View>
   )
