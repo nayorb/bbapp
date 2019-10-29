@@ -37,6 +37,11 @@ const ImageStack = props => {
 					opacity: mainImageOpacity,
 				}}
 			/>
+			<MuscleImage
+				source={images.main}
+				isDefault={props.selectedMuscleGroup === null}
+				value={5}
+			/>
 			{Object.keys(muscles).map(muscleTypeKey => (
 				<MuscleImage
 					muscleTypeKey={muscleTypeKey}
