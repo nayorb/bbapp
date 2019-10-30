@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import Dots from './Dots'
 import muscleNames from '../../../constants/Muscles'
 import { TouchableOpacity } from 'react-native-gesture-handler'
@@ -9,7 +9,7 @@ import Colors from '../../../constants/Colors'
 const MuscleDetail = props => {
   const muscles = props.muscles
   return (
-    <View
+    <ScrollView
       style={{
         width: '100%',
       }}
@@ -40,7 +40,7 @@ const MuscleDetail = props => {
           </View>
         </TouchableOpacity>
       ))}
-    </View>
+    </ScrollView>
   )
 }
 
