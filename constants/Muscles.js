@@ -22,4 +22,5 @@ export default {
   serratus: 'Serratus',
   deltoids: 'Deltoids',
   erectors: 'Erectors',
+  front_neck: 'Front Neck',
 }

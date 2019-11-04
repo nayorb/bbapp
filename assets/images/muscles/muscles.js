@@ -23,4 +23,5 @@ export default {
   serratus: require('./serratus.png'),
   deltoids: require('./deltoids.png'),
   erectors: require('./erectors.png'),
+  front_neck: require('./neck_front.png'),
 }
