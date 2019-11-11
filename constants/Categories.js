@@ -28,17 +28,17 @@ export default [
   {
     title: 'Leg Raises',
     exercises: LegRaises,
-    img: images.legraises,
+    img: images.legraise_step10,
   },
   {
     title: 'Handstand Push-Ups',
     exercises: HandstandPushups,
-    img: images.handstandpu,
+    img: images.handstandpu_step5,
   },
   {
     title: 'Human flag',
     exercises: HumanFlag,
-    img: images.humanflag,
+    img: images.humanflag_pstep8,
   },
   {
     title: 'Planks',

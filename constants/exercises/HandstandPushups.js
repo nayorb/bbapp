@@ -3,7 +3,7 @@ import images from '../../assets/images/images'
 export default [
   {
     title: 'Wall Headstand',
-    img: images.handstandpu,
+    img: images.handstandpu_step1,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -18,7 +18,7 @@ export default [
   },
   {
     title: 'Crow Stand',
-    img: images.handstandpu,
+    img: images.handstandpu_step2,
     mastery: {
       beginner: [1, '10 s'],
       intermediate: [1, '30 s'],
@@ -36,7 +36,7 @@ export default [
   },
   {
     title: 'Wall Handstand',
-    img: images.handstandpu,
+    img: images.handstandpu_step3,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -55,7 +55,7 @@ export default [
   },
   {
     title: 'Half Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step4,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -75,7 +75,7 @@ export default [
   },
   {
     title: 'Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step5,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -95,7 +95,7 @@ export default [
   },
   {
     title: 'Close Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step6,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 9],
@@ -115,7 +115,7 @@ export default [
   },
   {
     title: 'Uneven Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step7,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 8],
@@ -135,7 +135,7 @@ export default [
   },
   {
     title: 'Half One-Arm Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step8,
     mastery: {
       beginner: [1, 4],
       intermediate: [2, 6],
@@ -155,7 +155,7 @@ export default [
   },
   {
     title: 'Lever Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step9,
     mastery: {
       beginner: [1, 3],
       intermediate: [2, 4],
@@ -175,7 +175,7 @@ export default [
   },
   {
     title: 'One-Arm Handstand Push-Up',
-    img: images.handstandpu,
+    img: images.handstandpu_step10,
     mastery: {
       beginner: [1, 1],
       intermediate: [2, 2],

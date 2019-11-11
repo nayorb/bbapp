@@ -3,7 +3,7 @@ import images from '../../assets/images/images'
 export default [
   {
     title: 'Knee Tuck',
-    img: images.legraises,
+    img: images.legraise_step1,
     mastery: {
       beginner: [1, 10],
       intermediate: [2, 25],
@@ -17,7 +17,7 @@ export default [
   },
   {
     title: 'Flat Knee Raise',
-    img: images.legraises,
+    img: images.legraise_step2,
     mastery: {
       beginner: [1, 10],
       intermediate: [2, 20],
@@ -31,7 +31,7 @@ export default [
   },
   {
     title: 'Flat Bent Leg Raise',
-    img: images.legraises,
+    img: images.legraise_step3,
     mastery: {
       beginner: [1, 10],
       intermediate: [2, 15],
@@ -45,7 +45,7 @@ export default [
   },
   {
     title: 'Flat Frog Raise',
-    img: images.legraises,
+    img: images.legraise_step4,
     mastery: {
       beginner: [1, 8],
       intermediate: [2, 15],
@@ -60,7 +60,7 @@ export default [
   },
   {
     title: 'Flat Straight Leg Raise',
-    img: images.legraises,
+    img: images.legraise_step5,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -75,7 +75,7 @@ export default [
   },
   {
     title: 'Hanging Knee Raise',
-    img: images.legraises,
+    img: images.legraise_step6,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -91,7 +91,7 @@ export default [
   },
   {
     title: 'Hanging Bent Leg Raise',
-    img: images.legraises,
+    img: images.legraise_step7,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -108,7 +108,7 @@ export default [
   },
   {
     title: 'Hanging Frog Raise',
-    img: images.legraises,
+    img: images.legraise_step8,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -125,7 +125,7 @@ export default [
   },
   {
     title: 'Partial Straight Leg Raise',
-    img: images.legraises,
+    img: images.legraise_step9,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],
@@ -142,7 +142,7 @@ export default [
   },
   {
     title: 'Hanging Straight Leg Raise',
-    img: images.legraises,
+    img: images.legraise_step10,
     mastery: {
       beginner: [1, 5],
       intermediate: [2, 10],

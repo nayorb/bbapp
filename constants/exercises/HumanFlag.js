@@ -3,7 +3,7 @@ import images from '../../assets/images/images'
 export default [
   {
     title: 'Clutch Hang',
-    img: images.humanflag,
+    img: images.humanflag_cstep1,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -18,7 +18,7 @@ export default [
   },
   {
     title: 'Diagonal Split Clutch',
-    img: images.humanflag,
+    img: images.humanflag_cstep2,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -33,7 +33,7 @@ export default [
   },
   {
     title: 'Diagonal Tuck Clutch',
-    img: images.humanflag,
+    img: images.humanflag_cstep3,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -49,7 +49,7 @@ export default [
   },
   {
     title: 'Diagonal Clutch',
-    img: images.humanflag,
+    img: images.humanflag_cstep4,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -65,7 +65,7 @@ export default [
   },
   {
     title: 'Horizontal Tuck Clutch',
-    img: images.humanflag,
+    img: images.humanflag_cstep5,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -81,7 +81,7 @@ export default [
   },
   {
     title: 'Horizontal Split Clutch',
-    img: images.humanflag,
+    img: images.humanflag_cstep6,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -97,7 +97,7 @@ export default [
   },
   {
     title: 'Bent Leg Clutch Flag',
-    img: images.humanflag,
+    img: images.humanflag_cstep7,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -113,7 +113,7 @@ export default [
   },
   {
     title: 'Clutch Flag',
-    img: images.humanflag,
+    img: images.humanflag_cstep8,
     mastery: {
       beginner: [1, '10 s'],
       intermediate: [1, '30 s'],
@@ -129,7 +129,7 @@ export default [
   },
   {
     title: 'Support Press',
-    img: images.humanflag,
+    img: images.humanflag_pstep1,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -147,7 +147,7 @@ export default [
   },
   {
     title: 'Press Hang',
-    img: images.humanflag,
+    img: images.humanflag_pstep2,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -165,7 +165,7 @@ export default [
   },
   {
     title: 'Kick Press',
-    img: images.humanflag,
+    img: images.humanflag_pstep3,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
@@ -183,7 +183,7 @@ export default [
   },
   {
     title: 'Vertical Chamber Press',
-    img: images.humanflag,
+    img: images.humanflag_pstep4,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '3 s'],
@@ -201,7 +201,7 @@ export default [
   },
   {
     title: 'Vertical Press',
-    img: images.humanflag,
+    img: images.humanflag_pstep5,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '3 s'],
@@ -219,7 +219,7 @@ export default [
   },
   {
     title: 'Split Press Flag',
-    img: images.humanflag,
+    img: images.humanflag_pstep6,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '3 s'],
@@ -237,7 +237,7 @@ export default [
   },
   {
     title: 'Bent Leg Press Flag',
-    img: images.humanflag,
+    img: images.humanflag_pstep7,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '3 s'],
@@ -255,7 +255,7 @@ export default [
   },
   {
     title: 'Press Flag',
-    img: images.humanflag,
+    img: images.humanflag_pstep8,
     mastery: {
       beginner: [1, '2 s'],
       intermediate: [1, '5 s'],
