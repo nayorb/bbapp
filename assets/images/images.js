@@ -73,6 +73,21 @@ export default {
   humanflag_pstep6: require('./exercises/humanflag/p-step6.png'),
   humanflag_pstep7: require('./exercises/humanflag/p-step7.png'),
   humanflag_pstep8: require('./exercises/humanflag/p-step8.png'),
+  // PLANKS
+  // FRONT
+  planks_fstep1: require('./exercises/planks/f-step1.png'),
+  planks_fstep2: require('./exercises/planks/f-step2.png'),
+  planks_fstep3: require('./exercises/planks/f-step3.png'),
+  planks_fstep4: require('./exercises/planks/f-step4.png'),
+  planks_fstep5: require('./exercises/planks/f-step5.png'),
+  planks_fstep6: require('./exercises/planks/f-step6.png'),
+  // SIDE
+  planks_sstep1: require('./exercises/planks/s-step1.png'),
+  planks_sstep2: require('./exercises/planks/s-step2.png'),
+  // BACK
+  planks_bstep1: require('./exercises/planks/b-step1.png'),
+  planks_bstep2: require('./exercises/planks/b-step2.png'),
+  planks_bstep3: require('./exercises/planks/b-step3.png'),
   //
   planks: require('./exercises/planks/main.png'),
   dips: require('./exercises/dips/main.png'),

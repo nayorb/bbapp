@@ -3,7 +3,7 @@ import images from '../../assets/images/images'
 export default [
   {
     title: 'Forearm Plank',
-    img: images.planks,
+    img: images.planks_fstep1,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -25,7 +25,7 @@ export default [
   },
   {
     title: 'Straight Arm Plank',
-    img: images.planks,
+    img: images.planks_fstep2,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -48,7 +48,7 @@ export default [
   },
   {
     title: 'Plank With Leg Raise',
-    img: images.planks,
+    img: images.planks_fstep3,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -72,7 +72,7 @@ export default [
   },
   {
     title: 'One Leg Plank',
-    img: images.planks,
+    img: images.planks_fstep4,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -94,7 +94,7 @@ export default [
   },
   {
     title: 'One Hand Plank',
-    img: images.planks,
+    img: images.planks_fstep5,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -116,7 +116,7 @@ export default [
   },
   {
     title: 'One Hand One Leg Plank',
-    img: images.planks,
+    img: images.planks_fstep6,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -138,7 +138,7 @@ export default [
   },
   {
     title: 'Forearm Side Plank',
-    img: images.planks,
+    img: images.planks_sstep1,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -159,7 +159,7 @@ export default [
   },
   {
     title: 'Side Plank',
-    img: images.planks,
+    img: images.planks_sstep2,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -181,7 +181,7 @@ export default [
   },
   {
     title: 'Forearm Back Plank',
-    img: images.planks,
+    img: images.planks_bstep1,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -198,7 +198,7 @@ export default [
   },
   {
     title: 'Straight Arm Back Plank',
-    img: images.planks,
+    img: images.planks_bstep2,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],
@@ -216,7 +216,7 @@ export default [
   },
   {
     title: 'Back Plank With Leg Raise',
-    img: images.planks,
+    img: images.planks_bstep3,
     mastery: {
       beginner: [1, '30 s'],
       intermediate: [1, '60 s'],

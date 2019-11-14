@@ -43,7 +43,7 @@ export default [
   {
     title: 'Planks',
     exercises: Planks,
-    img: images.planks,
+    img: images.planks_fstep2,
   },
   {
     title: 'Dips',
