@@ -88,8 +88,18 @@ export default {
   planks_bstep1: require('./exercises/planks/b-step1.png'),
   planks_bstep2: require('./exercises/planks/b-step2.png'),
   planks_bstep3: require('./exercises/planks/b-step3.png'),
-  //
-  planks: require('./exercises/planks/main.png'),
-  dips: require('./exercises/dips/main.png'),
-  frontlever: require('./exercises/frontlever/main.png'),
+  // DIPS
+  dips_step1: require('./exercises/dips/step1.png'),
+  dips_step2: require('./exercises/dips/step2.png'),
+  dips_step3: require('./exercises/dips/step3.png'),
+  dips_step4: require('./exercises/dips/step4.png'),
+  dips_step5: require('./exercises/dips/step5.png'),
+  dips_step6: require('./exercises/dips/step6.png'),
+  // FRONT LEVER
+  frontlever_step1: require('./exercises/frontlever/step1.png'),
+  frontlever_step2: require('./exercises/frontlever/step2.png'),
+  frontlever_step3: require('./exercises/frontlever/step3.png'),
+  frontlever_step4: require('./exercises/frontlever/step4.png'),
+  frontlever_step5: require('./exercises/frontlever/step5.png'),
+  frontlever_step6: require('./exercises/frontlever/step6.png'),
 }

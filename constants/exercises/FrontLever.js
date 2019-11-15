@@ -3,7 +3,7 @@ import images from '../../assets/images/images'
 export default [
   {
     title: 'Tuck Front Lever',
-    img: images.frontlever,
+    img: images.frontlever_step1,
     mastery: {
       beginner: [1, '3 s'],
       intermediate: [1, '30 s'],
@@ -28,7 +28,7 @@ export default [
   },
   {
     title: 'Bent Leg Front Lever',
-    img: images.frontlever,
+    img: images.frontlever_step2,
     mastery: {
       beginner: [1, '3 s'],
       intermediate: [1, '10 s'],
@@ -53,7 +53,7 @@ export default [
   },
   {
     title: 'Split Bent Leg Front Lever',
-    img: images.frontlever,
+    img: images.frontlever_step3,
     mastery: {
       beginner: [1, '3 s'],
       intermediate: [1, '10 s'],
@@ -78,7 +78,7 @@ export default [
   },
   {
     title: 'One Leg Front Lever',
-    img: images.frontlever,
+    img: images.frontlever_step4,
     mastery: {
       beginner: [1, '3 s'],
       intermediate: [1, '10 s'],
@@ -103,7 +103,7 @@ export default [
   },
   {
     title: 'Advanced One Leg Front Lever',
-    img: images.frontlever,
+    img: images.frontlever_step5,
     mastery: {
       beginner: [1, '3 s'],
       intermediate: [1, '10 s'],
@@ -128,7 +128,7 @@ export default [
   },
   {
     title: 'Front Lever',
-    img: images.frontlever,
+    img: images.frontlever_step6,
     mastery: {
       beginner: [1, '3 s'],
       intermediate: [1, '10 s'],

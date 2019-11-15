@@ -3,7 +3,7 @@ import images from '../../assets/images/images'
 export default [
   {
     title: 'Bent Leg Bench Dip',
-    img: images.dips,
+    img: images.dips_step1,
     mastery: {
       beginner: [3, 4],
       intermediate: [2, 10],
@@ -18,7 +18,7 @@ export default [
   },
   {
     title: 'Straight Leg Bench Dip',
-    img: images.dips,
+    img: images.dips_step2,
     mastery: {
       beginner: [3, 4],
       intermediate: [2, 10],
@@ -33,7 +33,7 @@ export default [
   },
   {
     title: 'Double Bench Dip',
-    img: images.dips,
+    img: images.dips_step3,
     mastery: {
       beginner: [3, 4],
       intermediate: [2, 10],
@@ -48,7 +48,7 @@ export default [
   },
   {
     title: 'Supported Parallel Bar Dip',
-    img: images.dips,
+    img: images.dips_step4,
     mastery: {
       beginner: [3, 4],
       intermediate: [2, 8],
@@ -64,7 +64,7 @@ export default [
   },
   {
     title: 'Parallel Bar Dip',
-    img: images.dips,
+    img: images.dips_step5,
     mastery: {
       beginner: [3, 4],
       intermediate: [2, 8],
@@ -80,7 +80,7 @@ export default [
   },
   {
     title: 'Straight Bar Dip',
-    img: images.dips,
+    img: images.dips_step6,
     mastery: {
       beginner: [3, 4],
       intermediate: [2, 8],

@@ -48,11 +48,11 @@ export default [
   {
     title: 'Dips',
     exercises: Dips,
-    img: images.dips,
+    img: images.dips_step5,
   },
   {
     title: 'Front Lever',
     exercises: FrontLever,
-    img: images.frontlever,
+    img: images.frontlever_step6,
   },
 ]
